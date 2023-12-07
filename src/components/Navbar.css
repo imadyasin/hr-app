@@ -1,0 +1,34 @@
+.navbar{
+    background-color: rgb(14, 13, 13);
+}
+
+.navbar-toggler{
+background-color: white;
+}
+
+.navbar-brand{
+   color: rgb(255 255 255); 
+   font-size: 1.5rem;
+   padding-left: 15px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+.navbar-brand:hover{
+    color: rgb(255 255 255); 
+    font-size: 1.5rem;
+    
+ }
+.navbar-nav .nav-link.active{
+    color: rgb(148, 138, 138);
+    font-size: 1.2rem;
+    padding: 6px 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-nav .nav-link.active:hover{
+    color: rgb(236, 235, 235);
+    background-color: rgb(131, 131, 72);
+    border-radius: 5px;
+    cursor: pointer;
+}

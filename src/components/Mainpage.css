@@ -1,0 +1,46 @@
+.full-width-div {
+  background-size: cover;
+  position: relative;
+  width: 100%; 
+  height: 600px; 
+ 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.overlay-text h3{
+  color: rgb(182, 175, 175);
+  font-size: 1.5rem;
+}
+.heading1{
+  font-size: 2.5rem;
+  color: rgb(253, 253, 253);
+}
+
+.heading2{
+  font-size: 1.2rem;
+  color: rgb(160, 156, 156);
+}
+
+.upload-button {
+  background-color: inherit;
+  color: #ffffff; /* Set the text color */
+  border: 0.1rem solid;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 15px; /* Set the border-radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.upload-button:hover {
+  background-color: rgb(185, 185, 49); /* Set the background color on hover */
+  cursor: pointer;
+  color: black;
+  font-weight: 100;
+}
