@@ -1,0 +1,17 @@
+.box{
+    width: 100%;
+    background-color:  rgb(31, 32, 32);
+    height: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    display: flex;
+  align-items: center;
+  }
+
+.innerbox{
+    color: rgb(182, 174, 174); 
+    text-align: center;
+    padding: 20px 5px;
+    flex: 1;
+    box-sizing: border-box;
+}  

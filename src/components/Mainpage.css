@@ -44,3 +44,107 @@
   color: black;
   font-weight: 101;
 }
+
+
+.container3{
+  margin: 2px 0px;
+  width:100%;
+  height: 250px;
+  background-color: #36446d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.container3-items{
+  color: white;
+  flex: 1; 
+  margin: 30px 0px;
+  text-align: center;
+  padding: 20px 0px ;
+  box-sizing: border-box;
+}
+
+.container3-items :hover{
+  cursor: pointer;
+  color: rgb(160, 160, 82);
+}
+.container3-items h1{
+  font-size: 3rem;
+}
+.container3-items p{
+  font-size: 14px;
+}
+
+.container2 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 50px;
+  background-color: #e2dddd;
+}
+
+.title-container {
+  width: 100%;
+  text-align: center;
+}
+.title-container h1{
+  padding-bottom: 10px ;
+  font-size: 2rem;
+  color: rgb(85, 82, 82);
+ 
+}
+
+.test-items {
+  flex-basis: calc(25% - 60px);
+  margin: 10px 0px;
+  text-align: center;
+  padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(169, 189, 180);
+  transition: background-color 0.3s ease-in-out; 
+  border-radius: 3px;
+
+}
+
+.test-items h4,p{
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.test-items p {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.test-items::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 165, 0, 0), rgb(104, 82, 41));
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+ 
+}
+
+.test-items:hover::before {
+  transform: translateY(-100%);
+}
+.test-items:hover {
+  background-color: rgb(94, 109, 150); /* Change background-color directly on hover */
+  color: white;
+  border-radius: 0px;
+}
+
