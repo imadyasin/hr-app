@@ -5,6 +5,8 @@ import Contact from './components/Contact';
 import Mainpage from './components/Mainpage';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Upload from './components/Upload';
+
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Mainpage />} />
       <Route path="/about" element={<About />} />
+      <Route path="/upload" element={<Upload />} />
+
       </Routes>
       <Contact/>
     </Router>

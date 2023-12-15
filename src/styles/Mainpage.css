@@ -35,7 +35,7 @@
   padding: 10px 20px; /* Adjust padding as needed */
   border-radius: 15px; /* Set the border-radius for rounded corners */
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
 }
 
 .upload-button:hover {
