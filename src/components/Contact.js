@@ -1,13 +1,10 @@
 import React from 'react'
-
+import '../styles/Contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import './Contact.css';
-
 export default function Contact() {
   return (
-    <>
     <div className="box">
       <div className='innerbox'>
       <h3>Get In Touch</h3>
@@ -21,6 +18,5 @@ export default function Contact() {
       </div>
 
     </div>
-    </>
   )
 }

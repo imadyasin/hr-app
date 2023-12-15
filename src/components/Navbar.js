@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 export default function Navbar() {
   return (
     <>
     <nav className="navbar navbar-expand-lg">
-  <div className="container-fluid">
+    <div className="container-fluid">
     <a className="navbar-brand" href="/">HR-SOLUTIONS</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link to="/" className="nav-link active" aria-current="page">Home</Link>
         </li>
         <li className="nav-item">
-        <Link to="/" className="nav-link active" aria-current="page">About</Link>
+        <Link to="/about" className="nav-link active" aria-current="page">About</Link>
         </li>
         <li className="nav-item ">
         <Link to="/" className="nav-link active" >Contact</Link>
