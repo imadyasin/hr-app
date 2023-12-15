@@ -1,11 +1,11 @@
 .box{
     width: 100%;
-    background-color:  rgb(31, 32, 32);
+    background: linear-gradient(160deg, #243e5a, #111 100%, #632f94);
     height: 300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
     display: flex;
-  align-items: center;
+    align-items: center;
   }
 
 .innerbox{

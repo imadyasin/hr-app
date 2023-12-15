@@ -18,7 +18,7 @@
     z-index: 2;
   }
   .text1 h3{
-    color: rgb(189, 23, 23);
+    color: rgb(231, 228, 228);
     font-size: 1.5rem;
   }
   .text1 h1{
@@ -33,4 +33,33 @@
   .heading22{
     font-size: 1rem;
     color: rgb(160, 156, 156);
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center; /* Center the columns vertically */
+    background: linear-gradient(45deg, #7fd64a, #4a90e2); /* Add a gradient background color */
+    padding: 20px; /* Add some padding to the main container */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    margin: 10px; /* Add some margin around each column */
+    text-align: left; /* Center the content within each column */
+    background: transparent;
+   
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 30px; 
+  }
+  
+  p {
+    color: #000000;
+    line-height: 1.5; 
+    font-size: 18px;
   }

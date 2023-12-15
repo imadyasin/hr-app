@@ -8,9 +8,9 @@ background-color: white;
 
 .navbar-brand{
    color: #ffffff; 
-   font-size: 1.5rem;
+   font-size: 2rem;
    padding-left: 15px;
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
    
 }
 
@@ -21,9 +21,8 @@ background-color: white;
  }
 .navbar-nav .nav-link.active{
     color: rgb(240, 236, 236);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 6px 15px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar-nav .nav-link.active:hover{

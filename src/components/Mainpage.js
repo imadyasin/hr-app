@@ -1,8 +1,41 @@
-import React from 'react'
+import React , { useState, useEffect }from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../styles/Mainpage.css';
 export default function Mainpage() {
+  const [counts, setCounts] = useState({
+    happyCustomers: 0,
+    teamMembers: 0,
+    companies: 0,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Specify the maximum values for counts
+      const maxCounts = {
+        happyCustomers: 99999,
+        teamMembers: 100,
+        companies: 800,
+      };
+
+      setCounts((prevCounts) => ({
+        happyCustomers: Math.min(prevCounts.happyCustomers + 1000, maxCounts.happyCustomers),
+        teamMembers: Math.min(prevCounts.teamMembers + 10, maxCounts.teamMembers),
+        companies: Math.min(prevCounts.companies + 100, maxCounts.companies),
+      }));
+
+      // Check if counts have reached the maximum values
+      if (
+        counts.happyCustomers >= maxCounts.testsConducted &&
+        counts.teamMembers >= maxCounts.teamMembers &&
+        counts.companies >= maxCounts.happyCustomers
+      ) {
+        clearInterval(interval); // Stop the interval when counts reach the maximum values
+      }
+    }, 20); // Adjust the interval for faster animation
+
+    return () => clearInterval(interval);
+  }, [counts]);
 
   return (
     <>
@@ -25,6 +58,7 @@ export default function Mainpage() {
  <div className="container2">
   <div className='title-container'>
   <h1>TRENDING JOB OPPORTUNITIES</h1>
+  <hr/>
   </div>
  
   <div className="test-items">
@@ -44,7 +78,7 @@ export default function Mainpage() {
    
   </div>
   <div className="test-items">
-    <h4>It Management</h4>
+    <h4>IT Management</h4>
     
   </div>
   <div className="test-items">
@@ -64,16 +98,16 @@ export default function Mainpage() {
 
 <div className="container3">
 <div className="container3-items">
-  <h1>1M+</h1>
-  <p>Tests Conducted Anually</p>
-</div>
-<div className="container3-items">
-  <h1>750+</h1>
-  <p>Team members working to give you the best testing services</p>
-</div>
-<div className="container3-items">
-  <h1>12000+</h1>
+  <h1>{`${counts.happyCustomers.toLocaleString()}+`}</h1>
   <p>Happy Customers Across The Country</p>
+</div>
+<div className="container3-items">
+  <h1>{`${counts.teamMembers.toLocaleString()}+`}</h1>
+  <p>Team members working to give you the best services</p>
+</div>
+<div className="container3-items">
+  <h1>{`${counts.companies.toLocaleString()}+`}</h1>
+  <p>Companies</p>
 </div>
 </div>
 <div>
