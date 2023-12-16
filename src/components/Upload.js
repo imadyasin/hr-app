@@ -28,16 +28,44 @@ export default function Upload() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Do something with the form data, like send it to a server
-    console.log(formData);
+    
+    // Create a FormData object to send as the request body
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('file', formData.file);
+
+    try {
+      const response = await fetch('http://localhost:8080/api/users/save', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      if (response.ok) {
+        alert('Image saved successfully');
+        const fileInput = document.querySelector('input[type="file"]');
+        fileInput.value = null;
+        setFormData({
+          name: '',
+          email: '',
+          file: null,
+        });
+      } else {
+        alert('Failed to save image');
+        setFormData({
+          name: '',
+          email: '',
+          file: null,
+        });
+      }
+    } catch (error) {
+      console.error('Error occurred:', error);
+    }
+
     // Reset the form after submission
-    setFormData({
-      name: '',
-      email: '',
-      file: null,
-    });
+   
   };
 
   return (
