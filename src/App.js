@@ -6,6 +6,7 @@ import Mainpage from './components/Mainpage';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Upload from './components/Upload';
+import Admin from './components/Admin';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Route path="/" element={<Mainpage />} />
       <Route path="/about" element={<About />} />
       <Route path="/upload" element={<Upload />} />
+      <Route path="/admin" element={<Admin />} />
+      
 
       </Routes>
       <Contact/>
