@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../styles/Mainpage.css";
-
 
 export default function Mainpage() {
   const [counts, setCounts] = useState({
@@ -14,7 +13,6 @@ export default function Mainpage() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Specify the maximum values for counts
       const maxCounts = {
         happyCustomers: 99999,
         teamMembers: 100,
@@ -32,16 +30,14 @@ export default function Mainpage() {
         ),
         companies: Math.min(prevCounts.companies + 100, maxCounts.companies),
       }));
-
-      // Check if counts have reached the maximum values
       if (
         counts.happyCustomers >= maxCounts.testsConducted &&
         counts.teamMembers >= maxCounts.teamMembers &&
         counts.companies >= maxCounts.happyCustomers
       ) {
-        clearInterval(interval); // Stop the interval when counts reach the maximum values
+        clearInterval(interval);
       }
-    }, 20); // Adjust the interval for faster animation
+    }, 20);
 
     return () => clearInterval(interval);
   }, [counts]);
@@ -67,7 +63,9 @@ export default function Mainpage() {
             </p>
             <br />
             <button className="upload-button">
-              <Link to="/upload">Upload Resume</Link>
+              <Link to="/upload" className="upload-link">
+                Upload Resume
+              </Link>
             </button>
           </div>
         </div>

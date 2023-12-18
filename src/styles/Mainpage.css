@@ -30,16 +30,16 @@
 
 .upload-button {
   background-color: inherit;
-  color: #ffffff; /* Set the text color */
+  color: #ffffff;
   border: 0.1rem solid;
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 15px; /* Set the border-radius for rounded corners */
+  padding: 10px 20px; 
+  border-radius: 15px;
   cursor: pointer;
 
 }
 
 .upload-button:hover {
-  background-color: rgb(185, 185, 49); /* Set the background color on hover */
+  background-color: rgb(185, 185, 49); 
   cursor: pointer;
   color: black;
   font-weight: 101;
@@ -122,7 +122,7 @@
 
 .test-items h4,p{
   padding: 0;
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   color:#ccced1;
   font: 18px inter,sans-serif;
   font-size: 23px;
@@ -137,7 +137,16 @@
 
 .test-items:hover {
   
-  transform: translateY(-10px); /* Move the test items up on hover */
+  transform: translateY(-10px);
   color: white;
   border-radius: 10px;
+}
+
+.upload-link {
+  color: white; 
+  text-decoration: none; 
+}
+
+.upload-link:hover {
+  color: black;
 }

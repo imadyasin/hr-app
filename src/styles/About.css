@@ -37,18 +37,18 @@
 
   .main-container {
     display: flex;
-    justify-content: center; /* Center the columns horizontally */
-    align-items: center; /* Center the columns vertically */
-    background: linear-gradient(45deg, #7fd64a, #4a90e2); /* Add a gradient background color */
-    padding: 20px; /* Add some padding to the main container */
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(45deg, #7fd64a, #4a90e2); 
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
   }
   
   .column {
     flex: 1;
     padding: 20px;
-    margin: 10px; /* Add some margin around each column */
-    text-align: left; /* Center the content within each column */
+    margin: 10px; 
+    text-align: left; 
     background: transparent;
    
   }
