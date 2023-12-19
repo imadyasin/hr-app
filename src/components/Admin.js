@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -63,10 +63,8 @@ export default function Admin() {
   };
 
   const handleLogout = () => {
-    // Implement your logout logic here
-    // For example, clear user session or perform any necessary cleanup
+    
     navigate('/adminlogin');
-   // Navigate to the logout page or home page
   };
   
   

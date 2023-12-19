@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -39,14 +38,13 @@ export default function Adminlogin() {
         const data = await response.json();
 
         if (data) {
-          // If login is successful, navigate to the Admin component
+          
           navigate("/admin");
         } else {
-          // Handle incorrect credentials
+          
           alert("Login failed. Please check your credentials.");
         }
       } else {
-        // Handle other HTTP errors
         alert("Login failed. Please try again.");
       }
     } catch (error) {
