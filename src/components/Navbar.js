@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link to="/about" className="nav-link active" aria-current="page">About</Link>
         </li>
         <li className="nav-item">
-        <Link to="/admin" className="nav-link active" aria-current="page">Admin</Link>
+        <Link to="/adminlogin" className="nav-link active" aria-current="page">Admin</Link>
         </li>
 
       </ul>

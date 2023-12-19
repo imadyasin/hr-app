@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../styles/Admin.css";
@@ -6,6 +8,7 @@ import "../styles/Admin.css";
 export default function Admin() {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleButtonClick = async () => {
     setIsLoading(true);
@@ -58,6 +61,13 @@ export default function Admin() {
       console.error('Error deleting user:', error);
     }
   };
+
+  const handleLogout = () => {
+    // Implement your logout logic here
+    // For example, clear user session or perform any necessary cleanup
+    navigate('/adminlogin');
+   // Navigate to the logout page or home page
+  };
   
   
 
@@ -70,6 +80,9 @@ export default function Admin() {
       <button onClick={handleButtonClick} disabled={isLoading}>
         {isLoading ? 'Loading...' : 'Get All Users'}
       </button>
+      <button className="btn btn-secondary ml-2" onClick={handleLogout}>
+          Logout
+        </button>
 
       {users.length > 0 && (
         <div className="users-list">
